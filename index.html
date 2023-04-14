@@ -1,81 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko-KR">
 
 <head>
     <meta charset="UTF-8">
-    <title>반응형 웹페이지</title>
-    <!-- Bootstrap CSS 파일 추가 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- 자체 CSS 파일 추가 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 부트스트랩 CSS 가져오기 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <title>약식 MBTI 검사</title>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img src="YT_Music.svg.png"
-                        alt="유튜브 뮤직 로고">
-                </div>
-            </div>
-        </div>
+    <header class="text-center">
+        <h1>약식 MBTI 검사</h1>
     </header>
-    <section id="section1">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>다시 듣기</h2>
-                </div>
-                <div class="col text-right">
-                    <a href="#">더보기</a>
-                </div>
+
+    <main class="container">
+        <section>
+            <h2>질문 1</h2>
+            <p>
+                혼자 있는 것을 좋아하시나요, 아니면 다른 사람들과 함께 있는 것을 좋아하시나요?
+            </p>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-secondary answer-btn" data-answer="I">혼자</button>
+                <button type="button" class="btn btn-secondary answer-btn" data-answer="E">다른 사람들과 함께</button>
             </div>
-            <div class="row">
-                <!-- 첫번째 플레이리스트 -->
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="https://via.placeholder.com/200x200" alt="플레이리스트 1">
-                        <div class="card-body">
-                            <h5 class="card-title">뉴진스플리</h5>
-                        </div>
-                    </div>
-                </div>
-                <!-- 두번째 플레이리스트 -->
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="https://via.placeholder.com/200x200" alt="플레이리스트 2">
-                        <div class="card-body">
-                            <h5 class="card-title">힙찔플리</h5>
-                        </div>
-                    </div>
-                </div>
-                <!-- 세번째 플레이리스트 -->
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="https://via.placeholder.com/200x200" alt="플레이리스트 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Driving Pop</h5>
-                        </div>
-                    </div>
-                </div>
-                <!-- 네번째 플레이리스트 -->
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img-top" src="https://via.placeholder.com/200x200" alt="플레이리스트 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Dua Lipa Playlist</h5>
-                        </div>
-                    </div>
-                </div>
-                <!-- 플레이리스트 더보기 버튼 -->
-                <div class="col-md-12 text-center">
-                    <button type="button" class="btn btn-primary btn-lg">다음으로</button>
-                </div>
+        </section>
+
+        <!-- 다음 1000자 -->
+        <section>
+            <h2>질문 2</h2>
+            <p>
+                현재에 집중하시나요, 아니면 미래에 집중하시나요?
+            </p>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-secondary answer-btn" data-answer="S">현재</button>
+                <button type="button" class="btn btn-secondary answer-btn" data-answer="N">미래</button>
             </div>
-        </div>
-    </section>
-<!-- Bootstrap JavaScript 파일 추가 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </section>
+
+        <section>
+            <h2>질문 3</h2>
+            <p>
+                직관적이고 추상적인 것을 좋아하시나요, 아니면 구체적이고 현실적인 것을 좋아하시나요?
+            </p>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-secondary answer-btn" data-answer="N">직관</button>
+                <button type="button" class="btn btn-secondary answer-btn" data-answer="S">감각</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>질문 4</h2>
+            <p>
+                논리적인 사고를 중요시하시나요, 아니면 감정적인 것을 중요시하시나요?
+            </p>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-secondary answer-btn" data-answer="T">논리</button>
+                <button type="button" class="btn btn-secondary answer-btn" data-answer="F">감정</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>질문 5</h2>
+            <p>
+                계획을 세우는 것을 좋아하시나요, 아니면 융통성 있게 일을 처리하는 것을 좋아하시나요?
+            </p>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-secondary answer-btn" data-answer="J">계획</button>
+                <button type="button" class="btn btn-secondary answer-btn" data-answer="P">융통성</button>
+            </div>
+        </section>
+
+        <section class="result-section">
+            <h2>결과</h2>
+            <p class="result-text"></p>
+        </section>
+
+    </main>
+    <!-- 부트스트랩 JS 가져오기 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
