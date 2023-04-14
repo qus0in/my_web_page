@@ -65,7 +65,7 @@ $(document).ready(function () {
             case "INFP":
                 return "이상주의자이자 자신과 타인의 성장을 꿈꾸는 사람입니다.";
             case "INTP":
-                return "논리적이고 분석적이며 창의력이 뛰어난 사람입니다.
+                return "논리적이고 분석적이며 창의력이 뛰어난 사람입니다.";
             case "ESTP":
                 return "현재에 더 중점을 둔 삶을 살아가는 사람입니다.";
             case "ESFP":
